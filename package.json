@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "scss": "node-sass -w --include-path scss ./scss/main.scss -o ./css/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
