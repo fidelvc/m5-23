@@ -1,0 +1,21 @@
+
+@mixin flex-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin box-dimensions ($width: auto, $height: auto) {
+    width: $width;
+    height: $height;
+}
+@mixin theme($color: black, $bg: whitesmoke) {
+    color: $color;
+    background-color: $bg;
+    border-color: currentColor;
+}
+@mixin crossBrowser($property, $val){
+    -webkit-#{$property}: $val;
+    -moz-#{$property}: $val;
+    -ms-#{$property}: $val;
+    #{$property}: $val;
+  }
